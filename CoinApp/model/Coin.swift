@@ -8,7 +8,7 @@
 import Foundation
 
 struct Coin: Codable, Identifiable {
-    let id = UUID()
+    var id = UUID()
     let assetId : String
     let url : String
     

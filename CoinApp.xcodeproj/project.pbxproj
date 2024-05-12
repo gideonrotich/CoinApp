@@ -14,6 +14,14 @@
 		F3E132712BEFC4E600EE7030 /* CoinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132702BEFC4E600EE7030 /* CoinAppTests.swift */; };
 		F3E1327C2BEFC4E600EE7030 /* CoinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1327B2BEFC4E600EE7030 /* CoinAppUITests.swift */; };
 		F3E132902BEFD02E00EE7030 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1328F2BEFD02E00EE7030 /* Coin.swift */; };
+		F3E132952BEFF11400EE7030 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132942BEFF11400EE7030 /* ApiServiceProtocol.swift */; };
+		F3E1329A2BEFF1AF00EE7030 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132992BEFF1AF00EE7030 /* ApiError.swift */; };
+		F3E1329F2BEFF80A00EE7030 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1329E2BEFF80A00EE7030 /* ApiService.swift */; };
+		F3E132A42BF0011F00EE7030 /* CoinsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132A32BF0011F00EE7030 /* CoinsFetcher.swift */; };
+		F3E132A92BF0058500EE7030 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132A82BF0058500EE7030 /* LoadingView.swift */; };
+		F3E132AE2BF006F000EE7030 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132AD2BF006F000EE7030 /* ErrorView.swift */; };
+		F3E132B32BF009D700EE7030 /* CoinsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132B22BF009D700EE7030 /* CoinsRow.swift */; };
+		F3E132B82BF00AAD00EE7030 /* CoinsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E132B72BF00AAD00EE7030 /* CoinsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		F3E1327B2BEFC4E600EE7030 /* CoinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAppUITests.swift; sourceTree = "<group>"; };
 		F3E1327D2BEFC4E600EE7030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3E1328F2BEFD02E00EE7030 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		F3E132942BEFF11400EE7030 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
+		F3E132992BEFF1AF00EE7030 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F3E1329E2BEFF80A00EE7030 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F3E132A32BF0011F00EE7030 /* CoinsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsFetcher.swift; sourceTree = "<group>"; };
+		F3E132A82BF0058500EE7030 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F3E132AD2BF006F000EE7030 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F3E132B22BF009D700EE7030 /* CoinsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRow.swift; sourceTree = "<group>"; };
+		F3E132B72BF00AAD00EE7030 /* CoinsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +154,10 @@
 		F3E1328C2BEFC53000EE7030 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F3E132A82BF0058500EE7030 /* LoadingView.swift */,
+				F3E132AD2BF006F000EE7030 /* ErrorView.swift */,
+				F3E132B22BF009D700EE7030 /* CoinsRow.swift */,
+				F3E132B72BF00AAD00EE7030 /* CoinsListView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -145,6 +165,10 @@
 		F3E1328D2BEFC53C00EE7030 /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				F3E132942BEFF11400EE7030 /* ApiServiceProtocol.swift */,
+				F3E132992BEFF1AF00EE7030 /* ApiError.swift */,
+				F3E1329E2BEFF80A00EE7030 /* ApiService.swift */,
+				F3E132A32BF0011F00EE7030 /* CoinsFetcher.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -286,8 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E132952BEFF11400EE7030 /* ApiServiceProtocol.swift in Sources */,
 				F3E132902BEFD02E00EE7030 /* Coin.swift in Sources */,
+				F3E132A42BF0011F00EE7030 /* CoinsFetcher.swift in Sources */,
+				F3E1329F2BEFF80A00EE7030 /* ApiService.swift in Sources */,
 				F3E132612BEFC4E400EE7030 /* ContentView.swift in Sources */,
+				F3E132A92BF0058500EE7030 /* LoadingView.swift in Sources */,
+				F3E1329A2BEFF1AF00EE7030 /* ApiError.swift in Sources */,
+				F3E132B82BF00AAD00EE7030 /* CoinsListView.swift in Sources */,
+				F3E132B32BF009D700EE7030 /* CoinsRow.swift in Sources */,
+				F3E132AE2BF006F000EE7030 /* ErrorView.swift in Sources */,
 				F3E1325F2BEFC4E400EE7030 /* CoinAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
